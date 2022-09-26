@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bike Mover - System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/bike.png" rel="icon">
+  <link href="static/assets/img/bike.png" rel="bike">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <h1>Bike Mover</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="system">System</a></li>
+          <li><a href="DataProcessing">Data Preprocessing</a></li>
+          <!-- <li><a href="projects.html">Analysis</a></li> -->
+          <li class="dropdown"><a href="#"><span>Analysis</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="ana-general">站點</a></li>
+              <li><a href="ana-weather">天氣</a></li>
+              <li><a href="ana-holiday">時段與使用時長</a></li>
+              <li><a href="ana-nearbys">周遭設施</a></li>
+            </ul>
+          </li>
+          <li><a href="prediction">Prediction</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('static/assets/img/city.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Hadoop Cluster</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>System</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img"
+            style="background-image: url(static/assets/img/hadoopcluster.png); width: 850px;" data-aos="zoom-in"
+            data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-7">
+            <h2>Hadoop 叢集</h2>
+            <div class="our-story">
+              <h4>Why Hadoop?</h4>
+              <h3>HDFS & YARN</h3>
+              <p>Hadoop 的核心精神 -- <br>"如果一台機器無法處理，那就用多台一起下去處理"</p>
+              <h4>HDFS</h4>
+              <ul>
+                <li><i class="bi bi-filetype-raw" style="color: black;" data-aos="fade-up" data-aos-delay="100"></i>
+                  <span data-aos="fade-up" data-aos-delay="100">將大資料切分成好幾小塊</span></li>
+                <li><i class="bi bi-filetype-csv" style="color: black;" data-aos="fade-up" data-aos-delay="200"></i>
+                  <span data-aos="fade-up" data-aos-delay="200">每一小塊複製 n 份後分給不同機器儲存<br>若部分資料遭損毀，仍然能在其他機器找回複製過的資料</span>
+                </li>
+                <li><i class="bi bi-bookmark-check" data-aos="fade-up" data-aos-delay="300"></i> <span
+                    data-aos="fade-up" data-aos-delay="300">展現 HDFS 高容錯率與平衡負載機制</span></li>
+              </ul>
+              <h4>YARN</h4>
+              <ul>
+                <li><i class="bi bi-memory" style="color: black;" data-aos="fade-up" data-aos-delay="400"></i> <span
+                    data-aos="fade-up" data-aos-delay="400">管理運算資源，記憶體 RAM 以及核心 CPU</span></li>
+                <li><i class="bi bi-gear" style="color: black;" data-aos="fade-up" data-aos-delay="500"></i> <span
+                    data-aos="fade-up" data-aos-delay="500">在不同電腦上執行程式<br>Mapreduce 資料處理引擎會將結果彙整</span>
+                </li>
+              </ul>
+              <h4 data-aos="fade-up" data-aos-delay="600"><a href="#alt-services" class="stretched-link">... Spark is
+                  better</a></h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter section-bg">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Members</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-pc-display color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Virtual Machines</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-memory color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="216" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Total Ram(G)</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-cpu color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>CPU Cores</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(static/assets/img/Spark.png);" data-aos="zoom-in"
+            data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Spark on Yarn</h3>
+            <p>與 Mapreduce 同為資料處理引擎，只不過處理效能更加快速有效率</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-pc-display flex-shrink-0"></i>
+              <div>
+                <h4><a href="https://hadoop.apache.org/" class="stretched-link">與 Hadoop 相容</a></h4>
+                <p>Spark 可以結合 Hadoop 叢集，並透過 Yarn 來管理我們的運算資源以及存取 HDFS 分散式檔案系統內的資料</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-fast-forward-btn flex-shrink-0"></i>
+              <div>
+                <h4><a href="https://spark.apache.org/docs/3.3.0/quick-start.html" class="stretched-link">比 Mapreduce
+                    更加快速</a></h4>
+                <p>Spark 是基於記憶體運算，而 Mapreduce 是將讀取的資料先暫存到硬碟中(SSD)，很容易就會有讀寫資料延遲的問題<br>再加上 Spark
+                  底層有做演算法最佳化，可以在執行程式時自動讓本身效能達到最好的效果</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-code-slash flex-shrink-0"></i>
+              <div>
+                <h4><a href="https://spark.apache.org/docs/3.3.0/api/python/getting_started/index.html"
+                    class="stretched-link">PySpark API</a></h4>
+                <p>Spark 支援多種語言，包括資料科學界的主力語言 python，大大提升資料科學家們在使用上的便利性</p>
+              </div>
+            </div><!-- End Icon Box -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+    </div>
+
+    </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>BDSE26</span></strong> - Team4
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
